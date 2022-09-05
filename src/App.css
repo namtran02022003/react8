@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-size: 24px;
+    margin:0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{
+  box-sizing: border-box;
 }
+a{
+    text-decoration: none;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.menu-header{
+    background-color: black;
+    color:#fff;
+    position: fixed;
+    width:100%;
+    opacity:0.60;
+    z-index: 1;
 }
+.menu-header-a{
+    padding:10px 20px;
+    display:inline-block;
+    color:#fff;
+    
+}
+.menu-header:hover{
+    opacity:1;
+}
+.menu-header-a:hover{
+    background-color: rgb(181, 184, 183);
+    color:black;
+}
+.header{
+    filter: grayscale(50%);
+    position: relative;
+}
+.text-one{
+    position: absolute;
+    margin:0 0 20px 20px;
+    background-color:black;
+    color:rgb(253, 253, 253);
+    left:0;
+    bottom:0;
+}
+.text-big{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-100{
+    font-size:100px;
+    color:#fff;
+}
+.p-image{
+    padding:15px 20px;
+    font-size:40px;
+    background-color: black;
+    color:#fff;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.p-image:hover{
+    background-color: rgb(143, 141, 141);
+    color:black;
+}
+.content{
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:36px;
+    color:#fff;
+}
+.center{
+    text-align: center;
+}
+.menu-content{
+    display: flex;
+}
+.menu-content-small{
+    width:33.3333%;
+    text-align: center;
+    padding:20px 0;
+}
+.div-red{
+    background-color: red;
+}
+.menu-content-small:hover{
+    background-color: red;
+}
+.content-menu-big{
+    padding:20px 10px;
+    background-color:#ffffff;
+    color:#000;
+}
+.content-menu-big::after, .menu-text-image::after, .div-float::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.span-right{
+    float:right;
+    background-color: rgb(78, 78, 78);
+    color:#fff;
+    display: block;
+    border-radius: 5px;
+}
+.div-color75{
+    color:#757575;
+}
+.menu-image{
+    float:right;
+}
+.menu-text{
+    float:left;
+}
+.menu-text-image{
+    margin-bottom:20px;
+}
+.div-float-left{
+    width:49.9999%;
+    float:left;
 }
